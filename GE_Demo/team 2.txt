@@ -1,0 +1,16 @@
+nguyenlk2@fsoft.com.vn
+nguyenLK22@
+
+
+user:nguyenLK2
+password:tuyetnhung
+
+uaa zone : d58f5c39-909f-45a3-985b-8b60765c14ab
+https://d58f5c39-909f-45a3-985b-8b60765c14ab.predix-uaa.run.aws-usw02-pr.ice.predix.io
+secret : tuyetnhung
+
+client :warehouse
+secret: tuyetnhung
+
+asset zone : 16dc2fa2-872a-46ad-94b3-0e62aa6a1d21
+time series : b2df5038-736d-48bd-b12b-31a4807440ed
