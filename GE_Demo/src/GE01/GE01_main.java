@@ -15,6 +15,9 @@ public class GE01_main {
         try {
             selenium.startSelenium();
             LogonPage logonPage = new LogonPage();
+            LandsPage lands = new LandsPage();
+            BlocksPage blocks = new BlocksPage();
+
             logonPage.Login();
             if (logonPage.checkTitle()){
                 System.out.println("PASSED: Checking Login Page");
@@ -24,13 +27,14 @@ public class GE01_main {
             }
 
             log.info("Checking Lands Page");
-            Lands lands = new Lands();
             if (lands.checkUserLink()){
                 System.out.println("PASSED: CheckLandsUser");
             }
             else{
                 System.out.println("FAILED: CheckLandsUser");
             }
+
+            System.out.println("CheckLandsLink result is " + blocks.checkLandsLink());
 
             selenium.stopSelenium();
         }catch (IOError Er) {System.out.println(Er);}

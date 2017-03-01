@@ -80,6 +80,7 @@ public class LogonPage{
     }
 
     public static void Login() {
+        log.info("Logon Page: Checking Login  ");
         try {
             log.info("Open link = " + APP_URL);
             selenium.openUrl(APP_URL);
@@ -98,7 +99,7 @@ public class LogonPage{
                 By btnLogin = createElementLocator(LOGIN_BUTTON);
                 selenium.click(btnLogin);
 
-                TimeUnit.SECONDS.sleep(3);
+                TimeUnit.SECONDS.sleep(2);
             } catch (NoSuchElementException E1) {
                 log.error("NoSuchElementException occurs : " + E1);
             }

@@ -63,10 +63,6 @@ public class selenium {
         return driver.getPageSource().contains(text);
     }
 
-    public static boolean isLinkDisplayed(final By locator) {
-        return driver.findElement(locator).isDisplayed();
-    }
-
     public static void click(final By locator) {
         driver.findElement(locator).click();
     }
@@ -79,12 +75,12 @@ public class selenium {
         driver.findElement(locator).clear();
     }
 
-    public List<WebElement> getElements(final By locator) throws NoSuchElementException {
+    public static List<WebElement> getElements(final By locator) throws NoSuchElementException {
         final List<WebElement> result = driver.findElements(locator);
         return result;
     }
 
-    public int getElementsCount(final By locator) {
+    public static int getElementsCount(final By locator) {
         List<WebElement> elements = driver.findElements(locator);
         int result = elements.size();
         return result;
