@@ -1,0 +1,12 @@
+demo.timeseries:
+  queryUrlPrefix: https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io/v1
+  ingestUrl: wss://gateway-predix-data-services.run.aws-usw02-pr.ice.predix.io/v1/stream/messages
+  zoneId: 3ef92dbd-3f51-48c7-b934-548ebd7572a1
+
+security.oauth2.client:
+  clientId: client
+  clientSecret: client
+  base64: Y2xpZW50OmNsaWVudA==
+  accessTokenUri: https://28ef1de2-c656-45d6-856b-15bdae2f3a1e.predix-uaa.run.aws-usw02-pr.ice.predix.io
+  userAuthorizationUri: https://28ef1de2-c656-45d6-856b-15bdae2f3a1e.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/authorize
+  tokenName: oauth_token

@@ -1,0 +1,14 @@
+---
+applications:
+  - name: longnd14-microservice
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    path: target/CoreService.jar
+    memory: 512M
+    instance: '1'
+
+   # timeout : 180
+env:
+   SPRING_PROFILES_ACTIVE : cloud
+   uaa_service_label : predix-uaa
+   clientId: client
+   base64ClientCredential: Y2xpZW50OmNsaWVudA==

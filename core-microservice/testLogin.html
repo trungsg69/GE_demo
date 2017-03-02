@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Login</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<button id="btn">Ajax</button>
+<script type="text/javascript">
+var data={'userName': "admin",'password': "admin"};
+$("#btn").click(function(){
+	console.log(data)
+	$.ajax({
+  type: "POST",
+  headers: { 
+        'Accept': 'application/json',
+        'Content-Type': 'application/json' 
+    },
+  url: "https://longnd14-microservice.run.aws-usw02-pr.ice.predix.io/login",
+  data: JSON.stringify(data),
+  dataType: "json",
+  success : function(data){
+  	console.log(data);
+  }
+});
+})
+	
+</script>
+</body>
+</html>
